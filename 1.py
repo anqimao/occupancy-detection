@@ -44,7 +44,7 @@ for j in name:
 #     #plt.boxplot(a)
 #     #plt.show()
 statistics = a.describe()
-statistics.loc['IQR'] = statistics.loc['75%']-statistics.loc['25%'] #IQR
+statistics.loc['IQR'] = statistics.loc['75%']-statistics.loc['25%'] 
 num_lin = 0
 for j1 in a:
         if j1>statistics["IQR"]*1.5+statistics["75%"] or j1<-statistics["IQR"]*1.5+statistics["25%"]:
